@@ -1,4 +1,4 @@
-$("form").on("submit", e => {
+$("form").on("change", e => {
   e.preventDefault();
 
   // condition pour rendre les borders du select en vert si une valeur du select a bien été séléctionnée, en rouge si aucune valeur n'est séléctionnée.
@@ -12,8 +12,11 @@ $("form").on("submit", e => {
   $("textarea").val().length > 15
     ? $("textarea").removeClass("border-danger").addClass("border-success")
     : $("textarea").addClass("border-danger");
+});
 
-  // si les deux conditions sont remplies, le form disparaît et une alert valide informe l'utilisateur..
+// si les deux conditions sont remplies, le form disparaît et une alert valide informe l'utilisateur..
+$("form").on("submit", e => {
+  e.preventDefault();
 
   if ($("textarea").val().length > 15 && $("select").val()) {
     $("form").remove();
