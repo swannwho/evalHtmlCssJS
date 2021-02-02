@@ -11,10 +11,6 @@ img {
   display: block;
 }
 
-.main-container {
-  margin-bottom: 0 !important;
-}
-
 nav {
   background-color: #061339;
   font-family: "Merienda", cursive;
@@ -54,9 +50,7 @@ header {
   font-weight: bold;
 }
 
-select:focus {
-  outline: none !important;
-}
+/* partie bandeau grise avec la tête de chat */
 
 .bandeau {
   background-color: #ddd;
